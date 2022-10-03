@@ -97,7 +97,7 @@ To make sure prometheus is polling the exporter add the following line to `/etc/
         - targets: 
                 - <hostname>:9015
 
-Be careful not to break with the yml document format as it will block propper startup of prometheus.
+Be careful not to break with the yml document format as it will block proper startup of prometheus.
 
 I've included a [grafana dashboard json file](https://raw.githubusercontent.com/brendanbank/gpsd-prometheus-exporter/main/gpsd_grafana_dashboard.json) which you can load into grafana.
 
