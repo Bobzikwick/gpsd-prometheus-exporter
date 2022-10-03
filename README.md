@@ -90,7 +90,7 @@ And you should see output like this:
 	gpsd_devices_info{activated="2021-01-20T12:22:31.003Z",bps="Unknown",cycle="Unknown",device="/dev/pps0",driver="PPS",flags="Unknown",mincycle="Unknown",native="Unknown",parity="Unknown",stopbits="Unknown",subtype="Unknown",subtype1="Unknown"} 1.0
 	...
 
-To make sure prometheus is polling the exporter add the following line to `/etc/prometheus/prometeus.yml` on the prometheus server.
+To make sure prometheus is polling the exporter add the following line to `/etc/prometheus/prometheus.yml` on the prometheus server.
 
 	  - job_name: gps
     	static_configs:
