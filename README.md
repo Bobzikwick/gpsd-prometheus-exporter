@@ -35,7 +35,7 @@ Make sure `gpsd_exporter.py` has the execution bit set:
 
 	chmod +x /usr/local/bin/gpsd_exporter.py
 	
-And enable the serivce to run at boot.
+And enable the service to run at boot.
 	
 	systemctl enable gpsd_exporter.service
 	systemctl start gpsd_exporter.service
@@ -44,7 +44,7 @@ Some U-Blox GPS units need to be forced to 115200 baud
 
 Check out [gps_setserial.service](https://github.com/brendanbank/gpsd-prometheus-exporter/blob/master/gps_setserial.service) to run at boot time. 
 	
-The default tcp port is 9015. You can test if the exporter is up by running the follwing command on the local machine:
+The default tcp port is 9015. You can test if the exporter is up by running the following command on the local machine:
 
 	curl -s localhost:9015
 	
